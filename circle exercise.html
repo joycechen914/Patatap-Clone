@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html class="no-js"> 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Circles</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <script type="text/javascript" src="paper-full.js"></script>
+        <link rel="stylesheet" href="circles.css">
+        
+        <script type="text/paperscript" canvas="myCanvas">
+
+
+
+            for (var x = 0; x < 1000; x+=100 ) {
+                for (var y = 0; y < 1000; y+=100) {
+                    Path.Circle(new Point(x, y), 10).fillColor = 'yellow';
+                }
+            }
+
+        </script>
+    </head>
+    <body>
+        <canvas id="myCanvas" resize></canvas>
+        
+        <script src="" async defer></script>
+    </body>
+</html>
